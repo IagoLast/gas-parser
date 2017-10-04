@@ -8,6 +8,10 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "json2csv": "^3.11.2",
     "node-fetch": "^1.7.3"
+  },
+  "scripts": {
+    "convert:csv": "json2csv -i data.json -f name,lat,lon,gasoA,gasoB,gas95,gas98,id > data.csv"
   }
 }
