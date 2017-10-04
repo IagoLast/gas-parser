@@ -1,0 +1,13 @@
+{
+  "name": "gas-parser",
+  "version": "0.0.0",
+  "description": "Wrapper over the http://geoportalgasolineras.es/ api",
+  "main": "index.js",
+  "repository": "https://github.com/IagoLast/gas-parser",
+  "author": "@iagolast",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "node-fetch": "^1.7.3"
+  }
+}
