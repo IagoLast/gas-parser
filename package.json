@@ -12,6 +12,8 @@
     "node-fetch": "^1.7.3"
   },
   "scripts": {
-    "convert:csv": "json2csv -i data.json -f name,lat,lon,gasoA,gasoB,gas95,gas98,id > data.csv"
+    "start": "yarn fetch && yarn tocsv &&  cp data.csv data/csv/$(date +\"%Y-%m-%d\").csv && cp data.json data/json/$(date +\"%Y-%m-%d\").json",
+    "fetch" : "node index.js > data.json",
+    "tocsv": "json2csv -i data.json -f name,lat,lon,gasoA,gasoB,gas95,gas98,id > data.csv"
   }
 }
